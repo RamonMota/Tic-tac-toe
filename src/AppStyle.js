@@ -35,6 +35,11 @@ export const TicTac = styled.ul`
         :active {
             background: linear-gradient(135.93deg, #7D78DB -7.69%, #4E4BAE 110.93%);
         }
+
+        @media(max-width: 800px) {
+            height: 20vw;
+            width: 20vw;
+        }
     }
 `;
 export const Footer = styled.p`
