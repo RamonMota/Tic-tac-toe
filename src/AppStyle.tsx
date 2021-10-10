@@ -16,15 +16,41 @@ export const TicTac = styled.ul`
     transition: 0.3s;
 
     li {
-        background: #FFFFFF;
-        padding: 80px;
+        height: 10vw;
+        width: 10vw;
+        align-items: center;
+        display: flex;
+        justify-content: center;
         border-radius: 10px;
+        background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         list-style-type: none;
         transition: 0.3s;
 
+        svg {
+            width: 5.8vw;
+            height: auto;
+        }
+
         :active {
             background: linear-gradient(135.93deg, #7D78DB -7.69%, #4E4BAE 110.93%);
+        }
+    }
+`;
+export const Footer = styled.p`
+    font: 100 14px 'Roboto';
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+
+    a {
+        text-decoration: none;
+        font: 500 14px 'Roboto';
+        color: #fff;
+        transition: 0.3s;
+
+        :hover {
+            color: #FA9905;
         }
     }
 `;
