@@ -1,0 +1,32 @@
+.theme-toggle {
+    display: inline-flex;
+    gap: 0.5rem;
+    border-radius: var(--rounded-20);
+    background: var(--board-bg);
+    padding: var(--space-10);
+    position: fixed;
+    bottom: var(--space-40);
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+
+
+    .theme-btn {
+        padding: 0;
+        height: 20px;
+        width: 20px;
+        border-radius: var(--rounded-20);
+        border: 1px solid var(--square-border);
+        background: var(--square-bg);
+        color: var(--color-text);
+        cursor: pointer;
+        transition: background 0.2s ease, border-color 0.2s ease;
+
+        &.is-active {
+            border: 2px solid var(--square-winner-border);
+            background: var(--square-winner-bg);
+            cursor: default;
+        }
+    }
+}

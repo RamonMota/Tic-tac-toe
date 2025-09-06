@@ -1,0 +1,45 @@
+@use "./styles/themes.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", ui-sans-serif,
+    sans-serif;
+}
+
+:root {
+  --space-10: 10px;
+  --space-15: 15px;
+  --space-20: 20px;
+  --space-40: 40px;
+  --rounded-15: 15px;
+  --rounded-20: 20px;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  width: 100%;
+
+  #root {
+    width: 100%;
+  }
+
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-20);
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}

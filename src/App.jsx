@@ -1,10 +1,14 @@
-import "./App.css";
+import "./App.scss";
+import { Header } from "./components/molecules/Header/Header";
+import { ThemeToggle } from "./components/molecules/ThemeToggle/ThemeToggle";
+import { TictactoeTable } from "./components/molecules/TictactoeTable/TictactoeTable";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
-      <h2>Welcome to React</h2>
+      <Header />
+      <TictactoeTable />
+      <ThemeToggle />
     </div>
   );
 }
